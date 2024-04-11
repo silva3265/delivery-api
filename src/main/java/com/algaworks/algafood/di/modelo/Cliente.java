@@ -1,4 +1,4 @@
-package com.algaworks.di;
+package com.algaworks.algafood.di.modelo;
 
 public class Cliente {
 
@@ -28,7 +28,7 @@ public class Cliente {
 	public boolean isAtivo() {
 		return ativo;
 	}
-
+	
 	public void ativar() {
 		this.ativo = true;
 	}

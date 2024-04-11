@@ -4,13 +4,13 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-@Controller // Vai receber requisições web
+@Controller // Controller é um component também
 public class MeuPrimeiroController {
 
 	@GetMapping("/hello")
-	@ResponseBody // o retorno vai ser devolvida como resposta
+	@ResponseBody
 	public String hello() {
 		return "Hello!";
 	}
-
+	
 }
