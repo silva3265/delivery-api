@@ -1,11 +1,12 @@
 package com.algaworks.algafood.di.notificacao;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 import com.algaworks.algafood.di.modelo.Cliente;
 
-@Primary // vai dar preferencia para o bean
+@Qualifier("sms") // vai dar preferencia para o bean
 @Component
 public class NotificadorSMS implements Notificador {
 	
